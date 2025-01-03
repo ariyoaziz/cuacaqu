@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cuacaqu/themes/colors.dart';
 import 'package:cuacaqu/screen/login.dart';
+import 'package:get/get.dart';
 
 class GetStarted extends StatelessWidget {
   const GetStarted({super.key});
@@ -107,7 +108,8 @@ class GetStarted extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.8,
                   child: OutlinedButton(
                     onPressed: () {
-                      // Navigasi ke halaman utama tanpa login
+                      // Navigasi ke halaman Home setelah mendapatkan lokasi
+                      Get.offAllNamed('/allow_acc');
                     },
                     style: OutlinedButton.styleFrom(
                       side: const BorderSide(color: AppColors.primary),

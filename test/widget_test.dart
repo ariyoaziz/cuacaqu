@@ -1,30 +1,22 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
+import 'package:cuacaqu/screen/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:cuacaqu/main.dart';
+import 'package:cuacaqu/main.dart'; // Pastikan file ini sudah benar diimport
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Weather location test', (WidgetTester tester) async {
+    // Membuat aplikasi dan merender halaman Home.
+    await tester.pumpWidget(MaterialApp(
+      home: HomePage(), // Gantilah dengan widget yang sesuai
+    ));
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Periksa apakah ada teks yang menunjukkan lokasi cuaca atau informasi awal.
+    expect(find.text('Current Location'),
+        findsOneWidget); // Menyesuaikan dengan teks yang ada di aplikasi Anda
+    expect(find.text('Loading...'),
+        findsNothing); // Pastikan tidak ada loading yang muncul.
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Anda dapat memodifikasi tes ini dengan mencari elemen lain yang relevan seperti tombol atau cuaca.
+    // Misalnya, memeriksa cuaca setelah memuat data.
   });
 }

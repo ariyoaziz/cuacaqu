@@ -61,11 +61,24 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: AnimatedOpacity(
           opacity: visible ? 1.0 : 0.0,
-          duration: const Duration(milliseconds: 500),
-          child: Image.asset(
-            'assets/images/Logo.png',
-            width: logoSize,
-            height: logoSize,
+          duration:
+              const Duration(milliseconds: 800), // Perpanjang durasi animasi
+          child: AnimatedScale(
+            scale: visible ? 1.2 : 0.8, // Efek pembesaran logo
+            duration: const Duration(milliseconds: 800),
+            curve: Curves.easeOut, // Curve animasi yang halus
+            child: AnimatedSlide(
+              offset: visible
+                  ? Offset(0, 0)
+                  : Offset(0, -0.2), // Efek slide dari atas
+              duration: const Duration(milliseconds: 800),
+              curve: Curves.easeOut,
+              child: Image.asset(
+                'assets/images/Logo.png',
+                width: logoSize,
+                height: logoSize,
+              ),
+            ),
           ),
         ),
       ),
