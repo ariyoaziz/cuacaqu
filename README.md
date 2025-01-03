@@ -23,5 +23,5 @@ Desain aplikasi ini dibuat menggunakan **Figma** dengan gaya yang clean dan user
 - **Dart**: Bahasa pemrograman untuk Flutter.
 
 
-Dibuat dengan ❤️ oleh Ariyo Aziz Pratama.
+❤️oleh Ariyo Aziz Pratama.
 
