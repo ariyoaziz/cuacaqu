@@ -1,6 +1,7 @@
 # Aplikasi CuacaQu 🌦️
 
-Halo! 👋 Selamat datang di repo **Aplikasi CuacaQu**, sebuah aplikasi ramalan cuaca berbasis Flutter yang memanfaatkan OpenWeather API. Proyek ini dibuat untuk memenuhi tugas mata kuliah **Piranti Bergerak** di bawah bimbingan **Ariyo Aziz Pratama (NIM: 5220411184)**. Yuk, kita intip fitur-fitur dan bagaimana aplikasi ini dibuat! 🚀
+Hai semua! 👋 Selamat datang di repo Aplikasi CuacaQu, aplikasi keren untuk memprediksi cuaca menggunakan Flutter dan OpenWeather API. Proyek ini adalah bagian dari tugas mata kuliah Piranti Bergerak, dikerjakan dengan penuh semangat oleh saya, Ariyo Aziz Pratama (NIM: 5220411184).
+Penasaran dengan fitur-fitur? Yuk, langsung saja kita eksplor! 🚀
 
 ## ✨ Tentang Aplikasi
 **CuacaQu** adalah aplikasi prediksi cuaca yang memberikan informasi lengkap seputar kondisi cuaca terkini. Dengan desain yang modern dan intuitif, aplikasi ini cocok banget buat kamu yang sering ngecek cuaca sebelum beraktivitas. 🌈
